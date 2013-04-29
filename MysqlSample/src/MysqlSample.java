@@ -486,19 +486,19 @@ public class MysqlSample
     }
     public boolean setDate(String dateType)
     {
-    	String year=JOptionPane.showInputDialog("Input "+dateType+" year:");
+    	year=JOptionPane.showInputDialog("Input "+dateType+" year:");
     	if(year.length()== 0 || numbers(year) || Integer.parseInt(year) > 9999 || Integer.parseInt(year) <1000)
     	{
 			JOptionPane.showMessageDialog(null, "Invalid year. You will be directed back to the menu.");
 			return true;
 		}
-    	String month=JOptionPane.showInputDialog("Input "+dateType+" month:");
+    	month=JOptionPane.showInputDialog("Input "+dateType+" month:");
     	if(month.length()== 0 || numbers(month) || Integer.parseInt(month) > 12 || Integer.parseInt(month) < 1)
     	{
 			JOptionPane.showMessageDialog(null, "Invalid month. You will be directed back to the menu.");
 			return true;
 		}
-    	String date=JOptionPane.showInputDialog("Input "+dateType+" date:");
+    	date=JOptionPane.showInputDialog("Input "+dateType+" date:");
     	if(date.length()== 0 || numbers(date) || Integer.parseInt(date) > 31 || Integer.parseInt(date) < 1)
     	{
 			JOptionPane.showMessageDialog(null, "Invalid date. You will be directed back to the menu.");
